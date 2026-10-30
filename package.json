@@ -1,0 +1,26 @@
+{
+  "name": "junctionlab-3d",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible, data-driven 3D junction traffic simulator",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:geometry": "node scripts/check-geometry.mjs",
+    "test:backend": "python -m unittest discover -s backend/tests -v",
+    "report": "node scripts/summarize-benchmark.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Valomaxed/junctionlab.git"
+  }
+}

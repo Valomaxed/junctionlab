@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use JunctionLab, please cite this software repository."
+type: software
+title: "JunctionLab: 3D Traffic Simulation and Signal-Control Benchmarking"
+authors:
+  - name: Valomaxed
+version: 2.0.0
+date-released: 2026-10-30
+repository-code: "https://github.com/Valomaxed/junctionlab"
+url: "https://github.com/Valomaxed/junctionlab"
+license: MIT
+abstract: >-
+  Academic software prototype combining an interactive Three.js junction
+  simulator with offline SUMO/TraCI experiments, trajectory replay,
+  and paired controller comparisons. Included demand and geometry are
+  synthetic; field calibration and independent validation are pending.
+keywords:
+  - traffic simulation
+  - SUMO
+  - signal control
+  - transportation engineering
+  - reproducible experiments
