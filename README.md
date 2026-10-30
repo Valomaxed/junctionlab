@@ -9,9 +9,9 @@ JunctionLab explores how traffic demand and signal control affect queues, stoppe
 
 **Current evidence:** a working software prototype, 24 automated tests, and 15 native SUMO runs using synthetic demand and assumed geometry. Field counts have not yet been integrated; field calibration and independent validation are pending. These results demonstrate the experiment workflow, rather than measured improvements at the real junction.
 
-[![JunctionLab 3D traffic simulation](docs/media/overview.jpg)](https://github.com/Valomaxed/junctionlab/raw/refs/heads/main/docs/media/junctionlab-demo.mp4)
+![JunctionLab 3D traffic simulation](docs/media/overview.jpg)
 
-**[Watch/download the 1:41 narrated demo](https://github.com/Valomaxed/junctionlab/raw/refs/heads/main/docs/media/junctionlab-demo.mp4)** · [Subtitles](docs/media/junctionlab-demo.srt) · [Study design](docs/RESEARCH.md) · [Results](docs/RESULTS.md)
+[Study design](docs/RESEARCH.md) · [Results](docs/RESULTS.md)
 
 ## Project at a glance
 
@@ -159,6 +159,6 @@ Next: integrate the classified turning-count survey, reconstruct observed lanes/
 
 ## License and attribution
 
-Original code and procedural vehicle models use the [MIT License](LICENSE). Dependency licenses remain their own; see [third-party notices](THIRD_PARTY_NOTICES.md). No student rosters, raw lab handouts, or private field records are included. The demo's narration uses the installed Microsoft Zira voice.
+Original code and procedural vehicle models use the [MIT License](LICENSE). Dependency licenses remain their own; see [third-party notices](THIRD_PARTY_NOTICES.md). No student rosters, raw lab handouts, or private field records are included.
 
 Maintained by [Valomaxed](https://github.com/Valomaxed). **Cite this repository** provides software attribution; it is not a peer-reviewed publication.
