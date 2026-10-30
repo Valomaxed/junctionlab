@@ -1,0 +1,67 @@
+1
+00:00:00,650 --> 00:00:07,857
+Meet Junction Lab, an interactive traffic simulation project inspired by the junction near I I T Delhi.
+
+2
+00:00:07,857 --> 00:00:12,097
+Explore mixed traffic, test signal settings, and compare control strategies.
+
+3
+00:00:13,717 --> 00:00:17,601
+Five vehicle classes move through a left hand traffic junction.
+
+4
+00:00:17,601 --> 00:00:24,204
+Detailed procedural models, signal phases, turning movements, and live queue metrics make the simulation easy to inspect.
+
+5
+00:00:25,817 --> 00:00:31,643
+Change traffic demand, cycle length, or the green split, then restart with the same random seed.
+
+6
+00:00:31,643 --> 00:00:35,285
+Watch queues form and discharge while delay and throughput update.
+
+7
+00:00:36,917 --> 00:00:42,317
+Import traffic counts from C S V, map the columns, and inspect assumptions.
+
+8
+00:00:42,317 --> 00:00:48,549
+The Python pipeline also provides parameter fitting and observation comparison tools for future field validation.
+
+9
+00:00:50,150 --> 00:00:54,223
+A separate native SUMO pipeline runs locally through Tra C I.
+
+10
+00:00:54,223 --> 00:01:00,517
+Its recorded trajectories replay in the three dimensional viewer, with a timeline and explanations of controller decisions.
+
+11
+00:01:02,150 --> 00:01:09,175
+Compare fixed time, actuated, and queue pressure controllers across fifteen runs using five paired seeds.
+
+12
+00:01:09,175 --> 00:01:11,985
+This synthetic example favors actuated control.
+
+13
+00:01:11,985 --> 00:01:15,732
+The chart reports uncertainty, not real world savings.
+
+14
+00:01:17,350 --> 00:01:22,951
+The project includes result exports, arrival schedule checks, and twenty four automated tests.
+
+15
+00:01:22,951 --> 00:01:28,552
+The browser simulator and native SUMO replay are clearly identified as separate engines.
+
+16
+00:01:30,183 --> 00:01:33,728
+The current demonstration uses synthetic demand and assumed geometry.
+
+17
+00:01:33,728 --> 00:01:40,031
+The next milestone is fitting the model to field data, then testing it against independent observations.
