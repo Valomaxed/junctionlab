@@ -1,0 +1,10 @@
+{
+  "tls":"C",
+  "incoming":{"N":"N_in","E":"E_in","S":"S_in","W":"W_in"},
+  "routes":{
+    "NL":["N_in","E_out"],"NT":["N_in","S_out"],"NR":["N_in","W_out"],
+    "EL":["E_in","S_out"],"ET":["E_in","W_out"],"ER":["E_in","N_out"],
+    "SL":["S_in","W_out"],"ST":["S_in","N_out"],"SR":["S_in","E_out"],
+    "WL":["W_in","N_out"],"WT":["W_in","E_out"],"WR":["W_in","S_out"]
+  }
+}
