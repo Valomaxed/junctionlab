@@ -22,7 +22,7 @@ No completed field-count workbook or quantitative queue/discharge observations h
 - README with architecture, reproducible run commands and honest limitations.
 - Data dictionary and a small shareable anonymized field-data sample, if authorized.
 - Calibration and held-out validation plots/tables.
-- Saved scenario CSV/JSON and the narrated demo recording.
+- Saved scenario CSV/JSON and representative simulation screenshots.
 - Study conclusions tied to verified measured outcomes.
 
 ## Extension path
