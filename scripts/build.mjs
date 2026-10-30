@@ -1,0 +1,13 @@
+import {mkdir,cp,rm,readFile,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..');
+const dist=path.join(root,'dist');
+await mkdir(dist,{recursive:true});
+for(const name of ['index.html','styles.css','replay.css','app.js','scene.js','engine.js','data.js','replay.js','experiment-worker.js'])await cp(path.join(root,'src',name),path.join(dist,name));
+await mkdir(path.join(dist,'vendor'),{recursive:true});
+for(const name of ['three.module.js','three.core.js'])await cp(path.join(root,'node_modules/three/build',name),path.join(dist,'vendor',name));
+for(const [from,to] of [['controls/OrbitControls.js','OrbitControls.js'],['geometries/RoundedBoxGeometry.js','RoundedBoxGeometry.js'],['utils/BufferGeometryUtils.js','BufferGeometryUtils.js']])await cp(path.join(root,'node_modules/three/examples/jsm',from),path.join(dist,'vendor',to));
+await cp(path.join(root,'node_modules/three/LICENSE'),path.join(dist,'vendor/THREE-LICENSE.txt'));
+await cp(path.join(root,'data/sample-counts.csv'),path.join(dist,'sample-counts.csv'));
+await cp(path.join(root,'data/sumo-demo.json'),path.join(dist,'sumo-demo.json'));
+console.log('Built dist/ with bundled local Three.js modules.');
