@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Tests and build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser dependencies
+        run: npm ci
+      - name: JavaScript behavior and replay tests
+        run: npm test
+      - name: Python pipeline unit tests
+        run: npm run test:backend
+      - name: Build static application
+        run: npm run build
+      - name: Check procedural vehicle geometry
+        run: npm run test:geometry
