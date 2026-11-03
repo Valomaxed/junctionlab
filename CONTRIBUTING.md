@@ -9,3 +9,11 @@ Useful contributions include reproducible bug reports, clearer model documentati
 For native experiments, report versions, durations, command, configuration, paired seeds, and raw outputs. Separate synthetic tests, fitted observations, and held-out observations. Do not infer calibration or real-world savings from passing software tests.
 
 See [the research overview](docs/RESEARCH.md). Contributions may be distributed under the project's MIT license.
+
+## Commit messages
+
+Use a concise, imperative subject that describes the technical change, such as
+`docs: clarify installation and add application screenshots`. Add a body only
+when the rationale or validation needs explanation. Do not copy task requests,
+prompts, conversation transcripts, personal remarks, or tool output into commit
+messages. Preserve author attribution and relevant co-author trailers.
